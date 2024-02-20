@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activity.ui.avis.AvisFragment"
+    android:orientation="vertical">
+
+<!--    <TextView-->
+<!--        android:id="@+id/labelListAvis"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:ems="10"-->
+<!--        android:text="Avis"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+    <ListView
+        android:id="@+id/listViewAvis"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/layout_button_avis"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_button_avis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="100dp"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_avis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_add"
+            app:iconGravity="textStart"
+
+            android:backgroundTint="@color/white"
+            app:iconTint="@color/black"
+            android:drawablePadding="4dp"
+            android:onClick="createAvis"
+             />
+
+    </LinearLayout>
+</RelativeLayout>

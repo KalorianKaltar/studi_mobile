@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_patient" >
+
+    <fragment
+        android:id="@+id/navigation_patient"
+        android:name="com.example.soignemoi.activity.ui.patient.PatientFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_patient" />
+
+    <fragment
+        android:id="@+id/navigation_prescription"
+        android:name="com.example.soignemoi.activity.ui.prescription.PrescriptionFragment"
+        android:label="@string/title_prescription"
+        tools:layout="@layout/fragment_prescription" />
+
+    <fragment
+        android:id="@+id/navigation_avis"
+        android:name="com.example.soignemoi.activity.ui.avis.AvisFragment"
+        android:label="@string/title_avis"
+        tools:layout="@layout/fragment_avis" />
+</navigation>
